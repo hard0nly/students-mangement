@@ -1,0 +1,169 @@
+body {
+	font-family: muli,sans-serif;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.main-container {
+	width: 550px;
+	height: 550px;
+	border: black 1px solid;
+}
+
+.nav-panel {
+	display: flex;
+	border-bottom: lightgrey 1px solid;
+}
+
+.tab {
+	width: 33.333333%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border: none;
+}
+
+.tab:hover {
+	cursor: pointer;
+	border-bottom: lightgrey 4px solid;
+	opacity: 0.7;
+}
+
+.tab-selected {
+	width: 33.333333%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: black 4px solid;
+}
+
+.enabled-button {
+	border: solid black 2px;
+}
+
+.disabled-button {
+	border: none;
+}
+
+.action-button {
+	width: 40px;
+	height: 30px;
+	background: none;
+    border: none;
+}
+
+.action-button:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.action-button img {
+	width: 24px;
+}
+
+.action-detail-button {
+	width: 14px;
+	height: 14px;
+	background: none;
+    border: none;
+	margin-right: 10px;
+}
+
+.action-button:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.action-detail-button img {
+	width: 14px;
+}
+
+.operations {
+	margin-top: 10px;
+	display: flex;
+	align-content: center;
+}
+
+.panel {
+	display: flex;
+}
+
+.students {
+	border-right: lightgrey 1px solid;
+}
+
+.companies {
+	border-right: lightgrey 1px solid;
+}
+
+.add-student-table,
+.upd-student-table,
+.del-student-table,
+.add-company-table,
+.upd-company-table,
+.del-company-table {
+	width: 160px;
+}
+
+.delete-student-table-info-cell,
+.delete-company-table-info-cell {
+	font-size: 12px;
+	text-align: center;
+}
+
+.new-student-input,
+.new-company-input {
+	width: 100px;
+}
+
+.new-student-select,
+.new-company-select {
+	width: 108px;
+}
+
+.students-list {
+	height: 305px;
+	overflow-y: auto;
+}
+
+.companies-list {
+	height: 445px;
+	border-top: lightgrey 1px solid;
+	padding-top: 10px;
+	overflow-y: auto;
+}
+
+.students-list,
+.companies-list {
+	width: 160px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.student-button,
+.company-button,
+.student-events-button,
+.company-events-button {
+	margin: 2px 0px;
+}
+
+.student-button:hover,
+.company-button:hover,
+.student-events-button:hover,
+.company-events-button:hover {
+	opacity: 0.7;
+}
+
+.student-events,
+.company-events {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.events {
+	border: none;
+}
