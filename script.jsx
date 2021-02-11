@@ -1,3 +1,5 @@
+import "Panel.jsx"
+
 const REGIM = {
 	S: "Students",
 	C: "Companies",
@@ -144,7 +146,7 @@ class DelStudent extends React.Component {
 					<td className="delete-student-table-info-cell">
 						<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
 							<input id="checkboxId" type="checkbox" onChange={this.onCheckChange} />
-							<label>Delete all connected events</label>
+							<label>Delete connected events</label>
 						</div>
 					</td>
 				</tr>
@@ -697,7 +699,7 @@ class DelCompany extends React.Component {
 					<td className="delete-student-table-info-cell">
 						<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
 							<input id="checkboxId" type="checkbox" onChange={this.onCheckChange} />
-							<label>Delete all connected events</label>
+							<label>Delete connected events</label>
 						</div>
 					</td>
 				</tr>
@@ -1414,28 +1416,6 @@ class Navigation extends React.Component {
 			<div id="C" onClick={this.onClick.bind(this)} className="tab">Companies</div>
 			<div id="E" onClick={this.onClick.bind(this)} className="tab">Events</div>
 		</nav>
-	}
-}
-
-class Panel extends React.Component {
-	state = { currentStudent: null, currentCompany: null };
-	updateCurrentStudent = (student) => {
-		this.setState({ currentStudent: student });
-	}
-	updateCurrentCompany = (company) => {
-		this.setState({ currentCompany: company });
-	}
-	updateCurrentEvent = (event) => {
-		this.setState({ currentEvent: event });
-	}
-	render() {
-		return <div className="panel">
-			{(this.props.Regim === REGIM.S) && <Students data={dataStudents} updateCurrentStudent={this.updateCurrentStudent} currentStudent={this.state.currentStudent} />}
-			{(this.props.Regim === REGIM.S) && <Student_Events data={dataEvents} currentStudent={this.state.currentStudent} />}
-			{(this.props.Regim === REGIM.C) && <Companies data={dataCompanies} updateCurrentCompany={this.updateCurrentCompany} currentCompany={this.state.currentCompany} />}
-			{(this.props.Regim === REGIM.C) && <Company_Events data={dataEvents} currentCompany={this.state.currentCompany} />}
-			{(this.props.Regim === REGIM.E) && <Events data={dataEvents} updateCurrentEvent={this.updateCurrentEvent} currentEvent={this.state.currentEvent} />}
-		</div>
 	}
 }
 
