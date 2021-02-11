@@ -261,13 +261,13 @@
 
 				let ops = <div className="operations">
 					{!this.flagx() && <button id="addStudent" onClick={this.addobc} title="Add new student" className="action-button">
-						<img src="file:///D:/labs/React/shared/images/add.png" />
+						<img src="shared/images/add.png" />
 					</button>}
 					{!this.flagx() && flag && <button id="delStudent" onClick={this.delobc} title="Delete student" className="action-button">
-						<img src="file:///D:/labs/React/shared/images/remove.png" />
+						<img src="shared/images/remove.png" />
 					</button>}
 					{!this.flagx() && flag && <button id="updStudent" onClick={this.updobc} title="Update student" className="action-button">
-						<img src="file:///D:/labs/React/shared/images/refresh.png" />
+						<img src="shared/images/refresh.png" />
 					</button>}
 				</div>
 
@@ -512,10 +512,10 @@
 						if (item.student.id == this.props.currentStudent.id) {
 							return <div key={item.id}>
 								<button id={item.id} onClick={this.delobc} className="action-detail-button disabled-button">
-									<img src="file:///D:/labs/React/shared/images/remove.png" />
+									<img src="shared/images/remove.png" />
 								</button>
 								<button id={item.id} onClick={this.updobc} className="action-detail-button disabled-button">
-									<img src="file:///D:/labs/React/shared/images/refresh.png" />
+									<img src="shared/images/refresh.png" />
 								</button>
 								<button id={item.id} className="student-events-button disabled-button" style={{ width: "315px" }}>
 									{item.date}{item.company ? ", " + item.company.name : null}, {item.text}
@@ -532,7 +532,7 @@
 					{this.state.flagupd && < Upd_Student_Event updupd={this.updupd} updCancel={this.updcancel} currentEvent={this.state.currentEvent} datacomp={dataCompanies} />}
 
 					{!this.flagx() && flag && <button onClick={this.addobc} className="action-detail-button" style={{ margin: "-20px 0 20px 0" }}>
-						<img src="file:///D:/labs/React/shared/images/add.png" />
+						<img src="shared/images/add.png" />
 					</button>}
 
 					{items}
@@ -797,13 +797,13 @@
 
 				let ops = <div className="operations">
 					{!this.flagx() && <button id="addCompany" onClick={this.addobc} title="Add new company" className="action-button">
-						<img src="file:///D:/labs/React/shared/images/add.png" />
+						<img src="shared/images/add.png" />
 					</button>}
 					{!this.flagx() && flag && <button id="delCompany" onClick={this.delobc} title="Delete company" className="action-button">
-						<img src="file:///D:/labs/React/shared/images/remove.png" />
+						<img src="shared/images/remove.png" />
 					</button>}
 					{!this.flagx() && flag && <button id="updCompany" onClick={this.updobc} title="Update company" className="action-button">
-						<img src="file:///D:/labs/React/shared/images/refresh.png" />
+						<img src="shared/images/refresh.png" />
 					</button>}
 				</div>
 
@@ -1046,10 +1046,10 @@
 						if (item.company.id == this.props.currentCompany.id) {
 							return <div key={item.id}>
 								<button id={item.id} onClick={this.delobc} className="action-detail-button disabled-button">
-									<img src="file:///D:/labs/React/shared/images/remove.png" />
+									<img src="shared/images/remove.png" />
 								</button>
 								<button id={item.id} onClick={this.updobc} className="action-detail-button disabled-button">
-									<img src="file:///D:/labs/React/shared/images/refresh.png" />
+									<img src="shared/images/refresh.png" />
 								</button>
 								<button key={key} id={item.id} className="company-events-button disabled-button" style={{ width: "315px" }}>
 									{item.date}, {item.text}{item.student ? ", " + item.student.name : null}
@@ -1066,7 +1066,7 @@
 					{this.state.flagupd && < Upd_Company_Event updupd={this.updupd} updCancel={this.updcancel} currentEvent={this.state.currentEvent} datastud={dataStudents} />}
 
 					{!this.flagx() && flag && <button onClick={this.addobc} className="action-detail-button" style={{ margin: "-20px 0 20px 0" }}>
-						<img src="file:///D:/labs/React/shared/images/add.png" />
+						<img src="shared/images/add.png" />
 					</button>}
 
 					{items}
@@ -1286,13 +1286,13 @@
 
 				let ops = <div className="operations">
 					{!this.flagx() && <button id="addEvent" onClick={this.addobc} title="Add new event" className="action-button">
-						<img src="file:///D:/labs/React/shared/images/add.png" />
+						<img src="shared/images/add.png" />
 					</button>}
 					{!this.flagx() && flag && <button id="delEvent" onClick={this.delobc} title="Delete event" className="action-button">
-						<img src="file:///D:/labs/React/shared/images/remove.png" />
+						<img src="shared/images/remove.png" />
 					</button>}
 					{!this.flagx() && flag && <button id="updEvent" onClick={this.updobc} title="Update event" className="action-button">
-						<img src="file:///D:/labs/React/shared/images/refresh.png" />
+						<img src="shared/images/refresh.png" />
 					</button>}
 				</div>
 
